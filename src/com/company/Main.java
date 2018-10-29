@@ -16,9 +16,9 @@ public class Main {
         //Boolean para imprimir la respuesta adecuada.
         boolean fecha=false;
         //If para comprobar si los datos introducidos estan dentro del rango aceptado.
-        if (dia >= 1 && dia <=30) {
-            if (mes >= 1 && mes <= 12) {
-                if (año >= 0) {
+        if (dia>0 && dia<=30){
+            if (mes>0 && mes<=12){
+                if (año>0){
                     fecha=true;
                 }
             }
