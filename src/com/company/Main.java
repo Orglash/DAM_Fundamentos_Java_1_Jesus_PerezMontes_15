@@ -15,7 +15,7 @@ public class Main {
         int año=sc.nextInt();
         //Boolean para imprimir la respuesta adecuada.
         boolean fecha=false;
-        //If para comprobar si los datos introducidos estan dentro del rango aceptado.
+        //If para comprobar si los datos introducidos están dentro del rango aceptado.
         if (dia>0 && dia<=30){
             if (mes>0 && mes<=12){
                 if (año>0){
@@ -23,11 +23,13 @@ public class Main {
                 }
             }
         }
-        //Impresion en pantalla del resultado.
+        //Impresión en pantalla del resultado.
         if(fecha){
             System.out.println("La fecha introducida es correcta.");
         }else{
             System.out.println("La fecha introducida es incorrecta.");
         }
+        //Cerramos el scanner.
+        sc.close();
     }
 }
